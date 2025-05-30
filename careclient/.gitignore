@@ -1,0 +1,98 @@
+# careclient/.gitignore
+.bundle/
+.kotlin/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnp/
+.pnp.js
+
+# dependencies
+/ios/
+/ios/build/
+/android/build/
+/android/app/build/
+/android/.gradle/
+/android/.idea/
+/android/local.properties
+/android/app/.cxx/
+/android/app/release/
+android/*.iml
+android/.settings/
+
+# 민감 정보 파일 (이미 수동으로 제거 예정이지만, 실수 방지용)
+android/app/google-services.json
+android/app/careclient-release-key.keystore # 매우 중요! 절대 올리면 안 됨
+android/app/debug.keystore # 보통은 괜찮지만, 포함하지 않는 것이 안전
+# gradle.properties 파일 자체는 포함하되, 내부의 비밀번호는 수동 제거 예정
+
+google-services.json
+
+# Hermes
+/android/app/build/generated/assets/react/release/hermes 
+
+# Keystore files (매우 중요! 절대 커밋하면 안 됨)
+*.keystore
+*.jks
+debug.keystore
+careclient-release-key.keystore
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.iml
+*.DS_Store
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build and Distribution
+/dist/
+/coverage/
+*.apk
+*.aab
+*.ipa
+*.dSYM/
+
+# Metro Bundler
+.metro-cache/
+
+# Watchman
+.watchmanconfig
+
+# Log files
+*.log
+logs
+*debug.log*
+*error.log*
+
+# Temporary files
+*.swp
+*~
+*.tmp
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment variables
+.env
+.env.*
+!/.env.example
+
+# TypeScript specific
+*.tsbuildinfo
+
+# Jest
+/coverage/
+junit.xml
+
+# Other
+yarn.lock
+# package-lock.json # yarn.lock을 사용한다면 package-lock.json은 제외 (프로젝트에서 하나만 사용 권장)

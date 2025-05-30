@@ -1,0 +1,42 @@
+# functions/.gitignore
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Build output
+lib/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+*.local
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# TypeScript specific
+*.tsbuildinfo
+
+# Environment variables / local config
+.env
+.env.*
+!/.env.example
+# config.json # 만약 Functions 환경 변수 대신 로컬 테스트용 설정 파일을 사용한다면
+
+# Logs
+logs/
+*.log
+
+# Other
+yarn.loc
+# package-lock.json # yarn.lock을 사용한다면 package-lock.json은 제외
+Thumbs.db
