@@ -54,6 +54,18 @@
 8.  **전화 연결 기능**
     *   경로 이탈 등 위급 상황 시, 앱 내에서 보호자에게 바로 전화 연결 가능
 
+## 🎥 주요 기능 시연
+
+*프로젝트의 핵심 기능 시연 영상입니다. **이미지를 클릭하면 YouTube 영상이 재생됩니다.** (일부 공개 영상)*
+
+### 1. 사용자 (노약자) 화면 작동 영상
+
+[![사용자 앱 시연 영상](https://img.youtube.com/vi/zJXtAevHtJI/0.jpg)](https://www.youtube.com/watch?v=zJXtAevHtJI)
+
+### 2. 보호자 화면 작동 영상
+
+[![보호자 앱 시연 영상](https://img.youtube.com/vi/D7O38MYnJ6Y/0.jpg)](https://www.youtube.com/watch?v=D7O38MYnJ6Y)
+
 ## 🛠️ 기술 스택
 
 *   **Frontend:** React Native
@@ -91,8 +103,6 @@
         *   `route_alerts/`: 경로 이탈 발생 시 알림 상태 정보
     *   **Firebase Functions:**
         *   `registered_routes`에 새로운 경로가 등록되면, Turf.js를 사용하여 해당 경로 주변의 완충 지대(Polygon)를 계산하고 DB에 저장.
-
-**(아래 설명과 함께 제공된 DB Table과 모듈 연계 관계 다이어그램 이미지를 여기에 삽입하세요.)**
 
 **DB Table과 모듈 연계:**
 ![DB와 모듈 연계 다이어그램](assets/db.png)
